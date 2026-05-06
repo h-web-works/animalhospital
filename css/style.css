@@ -554,11 +554,11 @@ information
   grid-template-columns: 32rem 1fr;
   column-gap: 2.5rem;
   align-items: center;
-  border-top: 1px solid var(--color-main);
+  border-top: 0.1rem solid var(--color-main);
   height: 6rem;
 }
 .information-item:last-child {
-  border-bottom: 1px solid var(--color-main);
+  border-bottom: 0.1rem solid var(--color-main);
 }
 @media (max-width: 767px) {
   .information-item {
@@ -601,5 +601,126 @@ information
   .information-item p {
     font-size: 1.6rem;;
     line-height: calc(24 / 16);
+  }
+}
+
+/* ----------
+access
+---------- */
+.access {
+  padding: 6.3rem 10rem 7rem;
+}
+@media (max-width: 767px) {
+  .access {
+    padding: 4.3rem 2rem 5rem;
+  }
+}
+
+.access__contents {
+  margin-top: 4.6rem;
+  display: flex;
+  column-gap: calc(46 / 880 * 100%);
+}
+@media (max-width: 767px) {
+  .access__contents {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+}
+
+.access__image {
+  width: calc(440 / 880 * 100%);
+}
+@media (max-width: 767px) {
+  .access__image {
+    width: 100%;
+  }
+}
+
+.access__textarea {
+  flex: 1;
+}
+
+.access__textarea__address {
+  padding: 0 0 2.7rem 0;
+  border-bottom: 0.1rem solid var(--color-main);
+}
+
+.access__textarea__address h3 {
+  font-size: 2.2rem;
+  line-height: calc(33 / 22);
+  font-weight: 700;
+}
+
+.access__textarea__address p {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  line-height: calc(27 / 18);
+}
+@media (max-width: 767px) {
+  .access__textarea__address p {
+    margin-top: 1.2rem;
+    font-size: 1.6rem;
+    line-height: calc(24 / 16);
+  }
+}
+
+.access__textarea__address a {
+  display: block;
+  font-size: 1.8rem;
+  line-height: calc(27 / 18);
+}
+@media (max-width: 767px) {
+  .access__textarea__address a {
+    font-size: 1.6rem;
+  }
+}
+
+.access__textarea__address__tel {
+  margin-top: 1.4rem;
+  line-height: calc(27 / 16);
+}
+@media (max-width: 767px) {
+  .access__textarea__address__tel {
+    margin-top: 0.6rem;
+  }
+}
+
+.access__textarea__address__tel span {
+  font-size: 2.5rem;
+  line-height: calc(40 / 25);
+  color: var(--color-sub);
+  font-weight: 700;
+}
+
+
+.access__textarea__address__email {
+  margin-top: 0.8rem;
+}
+@media (max-width: 767px) {
+  .access__textarea__address__email {
+    margin-top: 0.7rem;
+    line-height: calc(24 / 16);
+  }
+}
+
+.access__textarea__hours {
+  padding: 1.5rem 0 1.4rem;
+  border-bottom: 0.1rem solid var(--color-main);
+}
+@media (max-width: 767px) {
+  .access__textarea__hours {
+    padding: 1.2rem 0 1.2rem;
+  }
+}
+
+.access__textarea__hours p {
+  font-size: 1.8rem;
+  line-height: calc(40 / 18);
+}
+@media (max-width: 767px) {
+  .access__textarea__hours p {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
   }
 }
