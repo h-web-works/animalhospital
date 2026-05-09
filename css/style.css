@@ -205,14 +205,14 @@ fv
   width: calc(492 / 1080 * 100vw);
   height: calc(210 / 1080 * 100vw);
   background: rgb(255, 255, 255, 0.7);
-  padding: calc(22 / 1080 * 100vw) calc(35 / 1080 * 100vw) calc(23 / 1080 * 100vw) calc(99 / 1080 * 100vw);
+  padding: calc(22 / 1080 * 100vw) 0 calc(23 / 1080 * 100vw) calc(99 / 1080 * 100vw);
 }
 @media (max-width: 767px) {
   .fv__catch {
     bottom: 0;
     width: calc(311 / 375 * 100vw);
     height: calc(148 / 375 * 100vw);
-    padding: calc(18 / 375 * 100vw) calc(23 / 375 * 100vw) calc(14 / 375 * 100vw) calc(20 / 375 * 100vw);
+    padding: calc(18 / 375 * 100vw) 0 calc(14 / 375 * 100vw) calc(20 / 375 * 100vw);
   }
 }
 
@@ -236,12 +236,14 @@ fv
   font-weight: 700;
   margin-top: calc(14 / 1080 * 100vw);
   color: var(--color-sub);
+  letter-spacing: calc(-0.5 / 1080 * 100vw);
 }
 @media(max-width: 767px) {
   .fv__catch h2 .large-font {
     font-size: calc(30 / 375 * 100vw);
     line-height: calc(40 / 30);
     margin-top: calc(7 / 375 * 100vw);
+    letter-spacing: calc(-0.5 / 375 * 100vw);
   }
 }
 
