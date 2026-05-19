@@ -73,7 +73,7 @@ img {
 }
 
 .background-color-sub {
-  background: rgba(13, 150, 160, 0.1);
+  background: rgba(13, 150, 160, 0.10);
 }
 
 .section-title {
@@ -343,7 +343,7 @@ features
   display: flex;
   align-items: center;
   justify-content: space-between;
-  row-gap: 4.5rem;
+  column-gap: calc(45 / 880 * 100%);
 }
 @media (max-width: 767px) {
   .features-item {
@@ -381,7 +381,7 @@ features
 }
 
 .features-item__textarea {
-  width: calc(396 / 880 * 100%);
+  flex: 1;
   display: flex;
   flex-direction: column;
   row-gap: 1.9rem;
@@ -470,7 +470,7 @@ service
 .service__items {
   display: flex;
   justify-content: space-between;
-  column-gap: 5rem;
+  column-gap: calc(50 / 880 * 100%);
 }
 @media (max-width: 767px) {
   .service__items {
@@ -543,7 +543,7 @@ service
 information
 ---------- */
 .information {
-  padding-block: 6.2rem 6.9rem;
+  padding-block: 6.2rem 6.8rem;
 }
 @media (max-width: 767px) {
   .information {
@@ -555,18 +555,22 @@ information
   margin-top: 4.6rem;
 }
 
+.information-item {
+  border-top: 0.1rem solid var(--color-main);
+}
+.information-item:last-child {
+  border-bottom: 0.1rem solid var(--color-main);
+}
+
 .information-item a {
   display: grid;
   grid-template-columns: 32rem 1fr;
   column-gap: 0.5rem;
   align-items: center;
-  border-top: 0.1rem solid var(--color-main);
-  height: 6rem;
+  height: 5.9rem;
   padding-left: 1.9rem;
 }
-.information-item:last-child a {
-  border-bottom: 0.1rem solid var(--color-main);
-}
+
 @media (max-width: 767px) {
   .information-item a {
     grid-template-columns: 1fr;
@@ -826,11 +830,14 @@ input[type="email"] {
   height: 4rem;
   width: 100%;
   background:#fff;
+  padding-inline: 1rem;
+  line-height: calc(33 / 20);
 }
 @media (max-width: 767px) {
   input[type="text"],
   input[type="email"] {
     height: 5rem;
+    line-height: calc(33 / 18);
   }
 }
 
@@ -839,6 +846,13 @@ textarea {
   width: 100%;
   resize: none;
   background: #fff;
+  padding: 1rem;
+  line-height: calc(33 / 20);
+}
+@media (max-width: 767px) {
+  textarea {
+    line-height: calc(33 / 18);
+  }
 }
 
 .contact__button {
@@ -846,6 +860,9 @@ textarea {
   margin-inline: auto;
   width: 20rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .contact__button {
@@ -864,7 +881,7 @@ input[type="submit"] {
   font-size: 2.5rem;
   line-height: calc(33 / 25);
   cursor: pointer;
-  transition: all 0.4s;
+  transition: background-color 0.4s, color 0.4s;
 }
 @media (min-width: 768px) and (any-hover: hover) {
   input[type="submit"]:hover {
@@ -903,6 +920,7 @@ footer
 @media (max-width: 767px) {
   .footer__nav {
     padding-bottom: 1.9rem;
+    max-width: 33.5rem;
   }
 }
 
