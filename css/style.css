@@ -308,7 +308,6 @@ about
     right: 0.76rem;
     width: 6.83rem;
     height: 6.29rem;
-    opacity: 0.2;
   }
 }
 
@@ -439,7 +438,6 @@ service
 
 .service__items {
   display: flex;
-  justify-content: center;
   column-gap: calc(50 / 880 * 100%);
   row-gap: calc(30 / 880 * 100%);
 }
